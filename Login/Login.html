@@ -3,16 +3,20 @@
 
 <head>
     <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <title>Log-In</title>
+
+   
+        
 </head>
 
 <body>
     <div class="container" id="container">
         <div class="first">
             <!-- form-container >> first -->
-            <form action="#">
+            <form action="#"  name="inputForm" onSubmit="return validateForm()">
                 <h1>Login</h1>
                 <div class="social-container">
                     <a href="#" class="fa fa-facebook"></a>
@@ -23,20 +27,21 @@
                     <a href="#" class="social"><i class="fab fa fa-google fa-2x"></i></a> -->
                 </div>
                 <span>Or use your account</span>
-                <input required type="email" placeholder="User Name" />
+                <input required type="text" placeholder="E-mail" name="email" />
                 <!--autofocus-->
-                <input required type="password" placeholder="Password" />
+                <input required type="password" placeholder="Password" name="name" />
 
-                <a href="#">Forgot your password?</a>
+                <a style="font-size: 5px; color:#856363" href="#">Forgot your password?</a>
                 <!-- <a class="sign" href="#">
                     <U>Sign UP</U>
                 </a> -->
 
 
-                <button>Log In</button>
-
+                
+                <input onclick="myFunction()"  class="sum" style="    outline-style: auto; " type="submit" value="submit">
                 <P>
                     Don't have an account ?
+
                     <a href="../sign up/signUp.html" class="sign"> <U> Sign UP</U> </a>
                 </P>
             </form>
@@ -52,6 +57,89 @@
             </div>
         </div>
     </div>
+
+    <div style="position:fixed ;" id="back"></div>
+        <div id="box">
+            <i class="fa fa-times" aria-hidden="true" id="close"></i>
+            <b class="info" >
+                Use 8 or more characters 
+            </b>
+        </div>
+    <div style="position:fixed ;" id="back2"></div>
+        <div id="box2">
+            <i class="fa fa-times" aria-hidden="true" id="close2"></i>
+            <b class="info2" >
+                Please Enter valid email, e.g : <b>info@yahoo.com </b>
+            </b>
+        </div>
+    <div style="position:fixed ;" id="back3"></div>
+        <div id="box3">
+            <i class="fa fa-times" aria-hidden="true" id="close3"></i>
+            <b class="info3" >
+                E-mail is faild</b>
+            </b>
+        </div>
+
+
+
+
+
+        <script type="text/javascript"> 
+            let back= document.getElementById("back");
+            let box= document.getElementById("box");
+            let back2= document.getElementById("back2");
+            let box2= document.getElementById("box2");
+            function validateForm() {
+                var valid = true;
+                if(inputForm.name.value.length<=7){
+                    back.style.display = "block";
+                    box.style.display = "block";
+                    document.inputForm.name.focus();
+                    valid=false; }
+            else if(document.inputForm.email.value.indexOf("@")==-1||document.inputForm.email.value.indexOf(".")==-1){
+                back2.style.display = "block";
+                box2.style.display = "block";
+            document.inputForm.email.focus();
+            valid=false; }
+                    
+            else if(document.inputForm.email.value=="Admin@admin.com" && document.inputForm.name.value=="11111111"){
+                location.href = "../index.html";
+            valid=false; }
+            else if(document.inputForm.email.value!="seif@gmail.com" && document.inputForm.name.value!="seif seif"){
+                back3.style.display = "block";
+                box3.style.display = "block";
+            valid=false; }
+            else if(document.inputForm.email.value=="seif@gmail.com" && document.inputForm.name.value=="seif seif"){
+                location.href = "../index.html";
+            valid=false; }
+            
+            return valid;
+            };
+            let close = document.getElementById("close");
+            let sum = document.getElementById("sum");
+
+            close.onclick = function () {
+                back.style.display = "none";
+                box.style.display = "none";
+            };
+
+            let close2 = document.getElementById("close2");
+
+            close2.onclick = function () {
+                back2.style.display = "none";
+                box2.style.display = "none";
+            };
+            let close3 = document.getElementById("close3");
+
+            close3.onclick = function () {
+                back3.style.display = "none";
+                box3.style.display = "none";
+            };
+
+
+
+            
+            </script>
 </body>
 
 </html>
