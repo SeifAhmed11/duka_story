@@ -51,29 +51,55 @@ header {
 
 }
 
-#giftbtn,
-#findlab {
-    background-color: rgba(0, 0, 0, 0.089);
+.headerbtn {
+    background-color: white;
     border-radius: 8px;
     border: 2px;
-    height: 30px;
-    color: black;
-    font-family: "Poppins", sans-serif;
+    color: hsl(353, 100%, 78%);
+    font-family:  sans-serif;
     cursor: pointer;
     padding: 5px;
-    margin-right:
-        5px;
-
-
+    margin-right:15px;
+    font-size: larger;
+    border-style: inset;
+    border-color: hsl(353, 100%, 78%)   ;
+    
 }
 
-#giftbtn:hover,
-#findlab:hover {
+.headerbtn:hover {
     background-color: hsl(353, 100%, 78%);
     transition-duration: 0.5s;
     transition-delay: 0.01s;
     color: white;
+    border-style: inset;
+    border-color: hsl(350, 4%, 71%)   ;
+    transition: 1s;
+}
 
+.out {
+    background-color: white;
+    border-radius: 8px;
+    border: 2px;
+    color: hsl(353, 100%, 78%);
+    font-family:  sans-serif;
+    cursor: pointer;
+    padding: 5px;
+    margin-right:15px;
+    font-size: larger;
+    border-style: inset;
+    border-color: hsl(353, 100%, 78%)   ;
+    margin-left: 970px;
+
+}
+
+.out :hover {
+    background-color: hsl(353, 100%, 78%);
+    transition-duration: 0.5s;
+    transition-delay: 0.01s;
+    color: white;
+    border-style: inset;
+    border-color: hsl(350, 4%, 71%)   ;
+    transition: 1s;
 }
 
 hr {
