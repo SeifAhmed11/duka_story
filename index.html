@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Duka-Online Store
+    </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="headersocial">
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-twitter"></i></div>
+            <div class="social"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <div class="headerbtn">
+            <button id="giftbtn">Play And Win</button>
+            <button id="findlab">Find Your Labtop</button>
+        </div>
+
+    </header>
+    <hr style="margin-top: 20px;">
+    <div id="secheader">
+        <img class="logo" src="uu.png">
+        <div class="search">
+
+            <input type="text" placeholder="   Enter Product Name.." name="search">
+            <i class="fa-solid fa-magnifying-glass "></i>
+        </div>
+        <div class="profile">
+
+            <i id="log" onclick="log()" class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-heart-circle-plus"></i>
+
+
+        </div>
+    </div>
+
+
+
+
+    <hr>
+
+    <div class="cat">
+        <div>Home</div>
+        <div><a href="/Fashion/home.html">Fashion</a></div>
+        <div>Electronics</div>
+        <div>About Us</div>
+        <div>Contact Us</div>
+    </div>
+
+
+
+
+
+    <div class="navmobile">
+        <i id="menu" class="fa-solid fa-bars"></i>
+
+        <i class="fa-regular fa-user"></i>
+        <a href="index.html"><i style="font-size: 26px;    color:  hsla(0, 0%, 0%, 0.832);"
+                class="fa-solid fa-house"></i></a>
+
+        <i class="fa-solid fa-store"></i>
+
+        <i class="fa-solid fa-heart-circle-plus"></i>
+
+
+    </div>
+
+    <div id="sidemenu">
+        <div>
+            <p>Menu</p>
+            <i id="cancel" class="fa-solid fa-xmark"></i>
+        </div>
+
+        <a> <i class="fa-solid fa-laptop"></i> Electronic </a>
+        <a href="/Fashion/home.html"> <i class="fa-solid fa-shirt"></i> Fashion </a>
+        <a><i class="fa-solid fa-address-card"></i> About US </a>
+        <a><i class="fa-solid fa-address-book"></i> Contact US </a>
+
+        <div class="headersocial">
+            <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="social"><i class="fa-brands fa-twitter"></i></div>
+            <div class="social"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="signlogin">
+        <i id="exit" onclick="exitlogin()" class="fa-solid fa-xmark"></i>
+
+        <a href="sign up/signUp.html"><i class="fa-solid fa-right-to-bracket"></i> Sign-Up</a>
+        <a href="Login/Login.html"><i class="fa-solid fa-right-to-bracket"></i> Log-In</a>
+    </div>
+
+
+
+    <div class="slider">
+        <img class="mySlides" src="1.png">
+        <img class="mySlides" src="2.png">
+        <img class="mySlides" src="3.png">
+
+
+    </div>
+
+
+
+    <!--    Offers    -->
+
+    <div class="Offers">
+        <div class="New_Arrivals">
+            <h3>New Arrivals</h3>
+            <div class="tarteb">
+                <div class="prod">
+                    <img class="img_Producer" src="/img/clothes-1.jpg">
+                    <div class="info">
+                        <div class="name">Relaxed Short Full S...</div>
+                        <div class="kind">Clothes</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/clothes-2.jpg">
+                    <div class="info">
+                        <div class="name">Girls Pnk Embro...</div>
+                        <div class="kind">Clothes</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/clothes-3.jpg">
+                    <div class="info">
+                        <div class="name">Black Floral Wrap...</div>
+                        <div class="kind">Clothes</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/shirt-1.jpg">
+                    <div class="info">
+                        <div class="name">Pure Garment Dye...</div>
+                        <div class="kind">Clothes</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Trending">
+            <h3>Trending</h3>
+            <div class="tarteb">
+                <div class="prod">
+                    <img class="img_Producer" src="img/sports-1.jpg">
+                    <div class="info">
+                        <div class="name">Running & Trekking...</div>
+                        <div class="kind">Sports</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/sports-2.jpg">
+                    <div class="info">
+                        <div class="name">Trekking & Running...</div>
+                        <div class="kind">Sports</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/party-wear-1.jpg">
+                    <div class="info">
+                        <div class="name">Womens Party We...</div>
+                        <div class="kind">Sports</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/sports-3.jpg">
+                    <div class="info">
+                        <div class="name">Sports Claw Women...</div>
+                        <div class="kind">Sports</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="Top_Rated">
+            <h3>Top Rated</h3>
+            <div class="tarteb">
+                <div class="prod">
+                    <img class="img_Producer" src="img/jewellery-2.jpg">
+                    <div class="info">
+                        <div class="name">Platinum Zircon Clas...</div>
+                        <div class="kind">Jewellery</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/watch-3.jpg">
+                    <div class="info">
+                        <div class="name">Smart Watche Vita...</div>
+                        <div class="kind">Watches</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/shampoo.jpg">
+                    <div class="info">
+                        <div class="name">Shampoo Conditio...</div>
+                        <div class="kind">Cosmetics</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod">
+                    <img class="img_Producer" src="img/jewellery-3.jpg">
+                    <div class="info">
+                        <div class="name">Rose Gold Peacock...</div>
+                        <div class="kind">Jewellery</div>
+                        <div class="pri">
+                            <div class="price">$49.00</div>
+                            <del class="rival">$55.00</del>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+    <!--    ourservices    -->
+
+    <div class="sectiontwo">
+        <div id="photo" class="photo">
+
+            <img src="4.jpg">
+
+            <div>
+                <p>25% Discount</p>
+                <h2>Summer Collection</h2>
+                <button>Shop Now</button>
+
+            </div>
+        </div>
+
+        <div id="ourservices" class="ourservices">
+
+            <h2>Our Services</h2>
+            <div class="ser">
+                <a href="#">
+                    <i class="fa-solid fa-ferry"></i>
+                    <h2>Worldwide Delivery
+                        <p>For Order Over $100</p>
+                    </h2>
+
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h2>Next Day Delivery
+                        <p>UK Orders Only</p>
+                    </h2>
+
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Best Online Support
+                        <p>Hours: 8AM - 11PM</p>
+                    </h2>
+
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <h2>Return Policy
+                        <p>Easy & Free Return</p>
+                    </h2>
+
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-ticket"></i>
+                    <h2>30% Money Back
+                        <p>For Order Over $100</p>
+                    </h2>
+
+                </a>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--    our team     -->
+
+    <div class="our_team">
+        <h3 class="subject">our team</h3>
+        <div class="persons">
+            <div class="person">
+                <img class="img_person" src="img/seif.jpg" data-uni="ain">
+                <div class="name_persn">seif ahmed</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+            <div class="person">
+                <img class="img_person" src="img/salama.jpg">
+                <div class="name_persn">ahmed salama</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+            <div class="person">
+                <img class="img_person" src="img/emad.jpg">
+                <div class="name_persn">abdelrahman emad</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+            <div class="person">
+                <img class="img_person" src="img/pink.png">
+                <div class="name_persn">rawan emad</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+            <div class="person">
+                <img class="img_person" src="img/karem.jpg">
+                <div class="name_persn">fathy ramadan</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+            <div class="person">
+                <img class="img_person" src="img/pink.png">
+                <div class="name_persn">farah hussien</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+            <div class="person">
+                <img class="img_person" src="img/mohamed.jpg">
+                <div class="name_persn">mohamed ahmed</div>
+                <div class="uni">Faculty of Computers and Information, Ain Shams University</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    up    -->
+
+    <div class="upp">
+        <i class="fa-solid fa-arrow-up up"></i>
+    </div>
+
+    <!-- footer  -->
+
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">DUKA</h1>
+
+            <h2>Contact</h2>
+
+            <address>
+                5534 Somewhere In. The World 22193-10212<br>
+
+                <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title" style="font-size: 16px; text-transform: uppercase;"><a
+                        href="/Fashion/home.html">Fashion</a></h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">dresses</a>
+                    </li>
+
+                    <li>
+                        <a href="#">trousers</a>
+                    </li>
+
+                    <li>
+                        <a href="#"> T-shirts</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title" style="font-size: 16px; text-transform: uppercase;">Electronics </h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Labtops </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Phones</a>
+                    </li>
+
+                    <li>
+                        <a href="#">TVs</a>
+                    </li>
+
+
+
+
+                </ul>
+            </li>
+
+            <li class="nav__item" style="font-size: 16px; text-transform: uppercase;">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p> DUKA&copy;2022 </p>
+
+
+        </div>
+    </footer>
+
+
+    <script src="home.js"></script>
+</body>
+
+
+
+
+
+</html>
