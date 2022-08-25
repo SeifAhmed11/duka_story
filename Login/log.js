@@ -4,17 +4,10 @@ let back2= document.getElementById("back2");
 let box2= document.getElementById("box2");
 let sum = document.getElementById("sum");
 let ex = document.getElementById("ex");
+let headerbtn1 = document.getElementsByClassName("headerbtn1");
+let headerbtn = document.getElementById("headerbtn");
 let user="seif@gmail.com";
 let pass_user= "seif seif";
-let h=0;
-let length = window.history;
-
-ex.onclick = function () {
-    length.clear();
-    
-};
-
-
 
 document.getElementById("giftbtn").innerHTML = user[0]+user[1]+user[2]+user[3];
 
@@ -42,7 +35,6 @@ else if(document.inputForm.email.value!=user || document.inputForm.name.value!=p
     box3.style.display = "block";
     valid=false; }
     else if(document.inputForm.email.value==user && document.inputForm.name.value==pass_user){
-        h++;
         location.href = "../index.html";
         valid=false;
     }
