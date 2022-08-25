@@ -9,23 +9,27 @@
     <link rel="stylesheet" href="all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
+    <header class="headerr" >
 
         <div class="headersocial">
             <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
             <div class="social"><i class="fa-brands fa-twitter"></i></div>
             <div class="social"><i class="fa-brands fa-instagram"></i></div>
-            <div class="social"><i class="fa-solid fa-right-to-bracket"></i></div>
-
         </div>
-        <div class="headerbtn">
-            <button id="giftbtn">Play And Win</button>
-            <button id="findlab">Find Your Labtop</button>
+        <a href="/Login/Login.html"><i class="fa fa-sign-out out" aria-hidden="true" id="ex" ></i></a>
+        <div class="headerbtn" id="headerbtn">
+            <i id="headerbtn1" class="fa fa-user" aria-hidden="true"></i>
+            <b class="headerbtn1" id="giftbtn" style="font-size:15px;"></b>
         </div>
 
     </header>
@@ -39,7 +43,6 @@
         </div>
         <div class="profile">
 
-            <i class="fa-regular fa-user"></i>
             <i class="fa-solid fa-store"></i>
             <i class="fa-solid fa-heart-circle-plus"></i>
 
@@ -47,26 +50,25 @@
         </div>
     </div>
 
+
+
+
     <hr>
 
     <div class="cat">
-        <div>Home</div>
-        <div>Electronics</div>
-        <div>Fashion</div>
-        <div>About Us</div>
-        <div>Contact Us</div>
-
+        <div><a href="/index.html">Home</a></div>
+        <div><a href="/Fashion/home.html">Fashion</a></div>
+        <div><a href="/electro/home.html">Electronics</a></div>
     </div>
 
 
 
 
 
-    <div class="navmobile">
+    <div  class="navmobile" style="margin-bottom: 3px;    padding-bottom: 40px; z-index:99999 ;   ">
         <i id="menu" class="fa-solid fa-bars"></i>
 
-        <i class="fa-regular fa-user"></i>
-        <a href="home.html"><i style="font-size: 26px;    color:  hsla(0, 0%, 0%, 0.832);"
+        <a href="index.html"><i style="font-size: 26px;    color:  hsla(0, 0%, 0%, 0.832);"
                 class="fa-solid fa-house"></i></a>
 
         <i class="fa-solid fa-store"></i>
@@ -82,10 +84,8 @@
             <i id="cancel" class="fa-solid fa-xmark"></i>
         </div>
 
-        <a> <i class="fa-solid fa-laptop"></i> Electronic </a>
-        <a> <i class="fa-solid fa-shirt"></i> <B> Fashion </B> </a>
-        <a><i class="fa-solid fa-address-card"></i> About US </a>
-        <a><i class="fa-solid fa-address-book"></i> Contact US </a>
+        <a href="/electro/home.html"> <i class="fa-solid fa-laptop"></i> Electronic </a>
+        <a href="/Fashion/home.html"> <i class="fa-solid fa-shirt"></i> Fashion </a>
 
         <div class="headersocial">
             <div class="social"><i class="fa-brands fa-facebook-f"></i></div>
@@ -94,6 +94,16 @@
         </div>
     </div>
 
+
+
+
+
+    <div id="signlogin">
+        <i id="exit" onclick="exitlogin()" class="fa-solid fa-xmark"></i>
+
+        <a href="sign up/signUp.html"><i class="fa-solid fa-right-to-bracket"></i> Sign-Up</a>
+        <a href="Login/Login.html"><i class="fa-solid fa-right-to-bracket"></i> Log-In</a>
+    </div>
 
 
     <div class="container">
@@ -764,11 +774,8 @@
 
 
 
+    <script src="/admin/js/main.js"></script>
+    <script src="/Login/log.js"></script>
     <script src="home.js"></script>
 </body>
-
-
-
-
-
 </html>

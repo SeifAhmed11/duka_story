@@ -234,7 +234,7 @@ hr {
 
 }
 
-@media (min-width:1150px) and (max-width:1360px) {
+@media (min-width:1101px)  {
 
     .profile {
         display: none;
@@ -283,7 +283,7 @@ hr {
 
 }
 
-@media (min-width:1361px) {
+@media (min-width:1001px) {
     .navmobile {
         display: none;
     }
@@ -870,6 +870,26 @@ body {
     }
 }
 
+a:link {
+    text-decoration: none;
+  }
+
+  a:active {
+    text-decoration: underline;
+  }
+
+  a:visited {
+    text-decoration: none;
+  }
+
+  a {
+color: #2f2f2f;
+transition: 0.5s;
+}
+  a:hover {
+color: #ff8f9c;
+}
+
 
 .legal {
     font-weight: bold;
@@ -892,4 +912,8 @@ body {
 
 .mySlides {
     display: none;
+}
+
+.footer__btn:hover{
+    color: #e5e5e5;
 }
