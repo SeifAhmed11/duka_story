@@ -100,7 +100,7 @@ input[type=email]:focus {
 button {
     border: 1px solid white;
     border-radius: 8px;
-    background-color:hsl(353, 100%, 78%);
+    background-color: hsl(353, 100%, 78%);
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -112,9 +112,9 @@ button {
 
 }
 
-button:hover{
+button:hover {
 
-    background-color: rgba(0, 0, 0, 0.089);    
+    background-color: rgba(0, 0, 0, 0.089);
     color: black;
 
 }
@@ -272,11 +272,11 @@ img {
     -ms-transform: translate(-50%, -50%);
 }
 
-.sum{
+.sum {
     transition: 0.5s;
 }
 
-.sum:hover{
+.sum:hover {
     width: 250px;
     margin-left: 22px;
     height: 35px;
@@ -292,7 +292,7 @@ img {
 
 #box {
     position: fixed;
-    width: 250px;
+    width: 283px;
     height: 150px;
     border: 1px solid #2d2d2d;
     background-color: #ffffff;
@@ -304,9 +304,9 @@ img {
 
 
 .info {
-    position:sticky;
-    top: 426px;
-    right: 530px;
+    position: sticky;
+    top: 310px;
+    right: 10px;
     font-size: 15px;
 
 
@@ -333,8 +333,8 @@ img {
 
 
 .info2 {
-    position:sticky;
-    top: 426px;
+    position: sticky;
+    top: 300px;
     right: 530px;
     font-size: 13px;
     color: #da6151;
@@ -365,7 +365,7 @@ img {
 
 
 .info3 {
-    position:sticky;
+    position: sticky;
     top: 426px;
     right: 530px;
     font-size: 13px;
@@ -374,6 +374,6 @@ img {
 
 
 
-.ff:hover{
+.ff:hover {
     color: red;
 }
