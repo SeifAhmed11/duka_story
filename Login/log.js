@@ -2,7 +2,7 @@ let back= document.getElementById("back");
 let box= document.getElementById("box");
 let back2= document.getElementById("back2");
 let box2= document.getElementById("box2");
-let user="seif@gmail.com";
+let user="seif@sam.com";
 let pass_user= "seif seif";
 
 
