@@ -11,7 +11,3 @@ let co2 =document.getElementsByClassName("co2");
 let co3 =document.getElementsByClassName("co3");
 let hed =document.getElementsByClassName("headrr");
 
-co1.onclick = function () {
-    back3.style.background = "black";
-    box3.style.display = "none";
-};

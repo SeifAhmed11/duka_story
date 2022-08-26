@@ -292,7 +292,7 @@
 .cardd {
     margin: 30px;
     width: 350px;
-    height: 300px;
+    height: 400px;
     background-color: var(--secondary);
     border-radius: 10px;
 }
@@ -340,3 +340,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
+
+
